@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+.background-blue {
+    background-color: #0c0a25;
+}
+.light-blue {
+    background-color: #117ea6;
+}
+.text-light-blue {
+    color: #117ea6;
+}
+.maven-pro{
+    font-family: "Maven Pro", serif;
+}
+.helvetica{
+    font-family: "Arimo", serif;
+}
+.home-bg{
+    height: 90svh;
+}
+.container-home{
+    height: 75svh;
+}

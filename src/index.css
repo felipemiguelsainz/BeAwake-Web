@@ -1,11 +1,25 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-.background-blue {
+.background-blue{
+    background-color: #0c0a25;
+}
+.text-blue{
     background-color: #0c0a25;
 }
 .light-blue {
     background-color: #117ea6;
 }
+.light-blue-line-homepage{
+    width: 100vw;
+    background-color: #117ea6;
+}
+.light-blue-line-values{
+    width: 100vw;
+    background-color: #117ea6;
+}
+
 .text-light-blue {
     color: #117ea6;
 }
@@ -16,8 +30,30 @@
     font-family: "Arimo", serif;
 }
 .home-bg{
-    height: 90svh;
+    height: 90vh;
 }
 .container-home{
-    height: 75svh;
+    height: 75vh;
+}
+.img-webelieve{
+    width: 100%;
+}
+.gradient-border{
+    border-image: linear-gradient(90deg, #8c52ff, #5ce1e6) 1;
+}
+.hover-scale {
+    transition: transform 0.2s ease-in, transform 0.5s ease-out; /* Entrada rápida, salida lenta */
+    position: relative;
+    display: inline-block;
+    will-change: transform; /* Optimiza la animación */
+}
+
+.hover-scale:hover {
+    transform: scaleX(1.25); /* Expande en eje X */
+}
+
+/* Evita que el z-index cambie durante la animación */
+.hover-scale:hover,
+.hover-scale:focus {
+    z-index: 10;
 }

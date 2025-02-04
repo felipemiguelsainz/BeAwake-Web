@@ -2,13 +2,19 @@
 import './index.css'
 import HomePage from './pages/HomePage'
 import Navbar from './pages/Navbar'
+import OurModelPage from './pages/OurModelPage'
+import OurProducts from './pages/OurProducts'
+import ValuesPage from './pages/ValuesPage'
 
 function App() {
 
   return (
-    <div className='bg-blue-950'>
+    <div className='background-blue'>
       <Navbar/>
       <HomePage/>
+      <ValuesPage/>
+      <OurModelPage/>|
+      <OurProducts/>
     </div>
   )
 }

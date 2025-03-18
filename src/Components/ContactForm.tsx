@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import axios from "axios";
-import { Button, Spinner } from "flowbite-react";
+import { Spinner } from "flowbite-react";
 
 export default function ContactForm() {
   const name = useRef<HTMLInputElement | null>(null);
